@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    width:500px;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 3%;
+    border-radius: 10px;    
+}
+
+.list_main {
+    background-color:  #4b69ee;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.list_main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list_main input:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.list_main input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list_main button {
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    color:rgb(14, 66, 2);
+    background-color: #60f0f0;
+    width:60%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.list_content {
+    display: flex;
+    justify-content: center;
+    background-color: #60f0f0;
+    color:rgb(14, 66, 2);
+    border-radius: 10px;
+    border: 4px solid #3b5cf0;
+}
+
+.list_content ul {
+    width: 80%;
+}
+
+.list_content li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(38, 26, 110);
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.delete_btn, .edit_btn  {
+    background-color: rgb(241 0 0);
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.choose:checked~#index {
+    text-decoration: line-through;
+}
